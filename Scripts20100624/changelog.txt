@@ -1,0 +1,75 @@
+2008-08-21
+
+- Initial release
+
+2009-03-08
+
+- connect.sql                                 Added DBM11107 and DBA11107
+- chapter02\bind_variables.sql                Fixed typo in comment
+- chapter02\sharable_cursors.sql              Added note about sharable_cursors_9i.sql + Fixed comment
+- chapter02\sharable_cursors_9i.sql           New file
+- chapter03\map_session_to_tracefile.sql      As of 11g the function LOWER must not be applied to the instance name 
+- chapter04\col_usage.sql                     New file
+- chapter04\comparing_object_statistics.sql   Fixed timing issue after sleep + ORA-00001
+- chapter05\bug5015557.sql                    Fixed hints + Added note about supported database releases
+- chapter05\dynamic_sampling_levels.sql       Fixed typo in header
+- chapter05\optimizer_secure_view_merging.sql Added service to CONNECT statements + Changed notes in header
+- chapter06\explain_plan.sql                  Fixed wrong CTAS in "Setup test environment"
+- chapter07\baseline_autoevolution.sql        New file
+- chapter07\all_rows.sql                      Added query to show SQL profile in 11g
+- chapter08\ParsingTest1.cs                   New file
+- chapter08\ParsingTest2.cs                   New file
+- chapter09\hash_cluster.sql                  New file
+- chapter10\merge_join.sql                    Added hint gather_plan_statistics to the last three queries
+- chapter11\ArrayInterface.cs                 New file
+- chapter11\RowPrefetching.cs                 New file
+- databases\DBA11107                          New directory containing the files to create the database DBA11107
+- databases\DBM11107                          New directory containing the files to create the database DBM11107
+
+2009-05-29
+
+- chapter07\object_stats.sql                  New file
+- chapter07\outline_with_ffs.sql              New file
+- chapter07\sqltext_to_signature.sql          New file
+
+2009-06-10
+
+- chapter09\fbi.sql                           To avoid index joins set _index_join_enabled to FALSE
+- chapter12\wrong_datatype.sql                To generate data use "to_date(...)" instead of "sysdate"
+
+2010-06-24
+
+- connect.sql                                 Added DBM10205, DBA10205, DBM11201 and DBA11201
+- chapter02\bind_variables.sql                Because of 11g modified/added queries against V$SQL_SHARED_CURSOR
+- chapter02\sharable_cursors.sql              Added SET SERVEROUTPUT OFF in the initialization part
+- chapter03\dbms_hprof.sql                    New file
+- chapter03\sql_trace_trigger.sql             New file
+- chapter06\display_awr.sql                   Improved query that displays AWR content
+- chapter06\execution_plans.sql               Added example for UNION ALL (RECURSIVE WITH)
+- chapter07\baseline_evolution_delete.sql     New file
+- chapter07\baseline_upgrade_11g.sql          After import added update to set the owner of the SQL tuning set
+- chapter07\opt_estimate.sql                  Uncommented 11g query
+- chapter07\outline_with_hj.sql               Script compatible with 10g/11g (set "_hash_join_enabled")
+- chapter07\tune_last_statement.sql           Added SET SERVEROUTPUT OFF in the initialization part
+- chapter08\client-side_caching.sql           New file
+- chapter09\conditions.sql                    Added queries containing NOT IN condition
+- chapter09\hash_cluster.sql                  Changed comment related to IN operator because of 11.2 improvement
+- chapter10\hash_join.sql                     Fixed typo in description
+- chapter10\join_elimination.sql              Fixed typo in description
+- chapter10\join_elimination2.sql             New file
+- chapter10\pwj.sql                           Disabled join-filter pruning
+- chapter10\subquery_unnesting.sql            Cover many more cases
+- chapter11\ArrayInterface.java               Added check for the return value of the executeBatch method
+- chapter11\ArrayInterfacePerf.java           Fixed number of iterations in main method
+- chapter11\atomic_refresh.sql                Changed CTAS to avoid ORA-30009
+- chapter11\dpi_performance.sql               Changed CTAS to avoid ORA-30009
+- chapter11\px_auto_dop.sql                   New file
+- chapter11\px_ddl.sql                        Changed the part displaying the parallel DDL status
+- chapter11\px_dml.sql                        Changed the part displaying the parallel DML status
+- chapter11\px_query.sql                      Changed the part displaying the parallel query status
+- chapter11\result_cache_plsql.sql            Added comment about invalidation in 11.2
+- chapter12\data_compression.sql              Changed CTAS to avoid ORA-30009
+- databases\DBA10205                          New directory containing the files to create the database DBA10205
+- databases\DBM10205                          New directory containing the files to create the database DBM10205
+- databases\DBA11201                          New directory containing the files to create the database DBA11201
+- databases\DBM11201                          New directory containing the files to create the database DBM11201

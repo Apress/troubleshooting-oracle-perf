@@ -1,0 +1,6 @@
+connect SYS/change_on_install as SYSDBA
+set echo on
+spool /u00/app/oracle/admin/DBM9207/scripts/CreateDBFiles.log
+CREATE TABLESPACE "USERS" LOGGING DATAFILE '/u01/oradata/DBM9207/users01.dbf' SIZE 25M REUSE AUTOEXTEND ON NEXT  1280K MAXSIZE UNLIMITED EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT  AUTO ;
+spool off
+exit;

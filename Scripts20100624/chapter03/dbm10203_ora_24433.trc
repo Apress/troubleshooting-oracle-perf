@@ -1,0 +1,83 @@
+/u00/app/oracle/admin/DBM10203/udump/dbm10203_ora_24433.trc
+Oracle Database 10g Enterprise Edition Release 10.2.0.3.0 - 64bit Production
+With the Partitioning, Oracle Label Security, OLAP and Data Mining Scoring Engine options
+ORACLE_HOME = /u00/app/oracle/product/10.2.0.3
+System name:	Linux
+Node name:	helicon.cha.trivadis.com
+Release:	2.6.9-42.ELsmp
+Version:	#1 SMP Tue Aug 15 10:35:26 BST 2006
+Machine:	x86_64
+Instance name: DBM10203
+Redo thread mounted by this instance: 1
+Oracle process number: 17
+Unix process pid: 24433, image: oracleDBM10203@helicon.cha.trivadis.com
+
+*** ACTION NAME:() 2007-07-11 10:58:57.903
+*** MODULE NAME:(SQL*Plus) 2007-07-11 10:58:57.903
+*** SERVICE NAME:(DBM10203.cha.trivadis.com) 2007-07-11 10:58:57.903
+*** SESSION ID:(145.6) 2007-07-11 10:58:57.903
+=====================
+PARSING IN CURSOR #1 len=47 dep=0 uid=29 oct=47 lid=29 tim=1156390954983879 hv=774405238 ad='6b5c7a68'
+BEGIN dbms_monitor.session_trace_enable; END;
+END OF STMT
+EXEC #1:c=0,e=329,p=0,cr=0,cu=0,mis=0,r=1,dep=0,og=1,tim=1156390954983873
+WAIT #1: nam='SQL*Net message to client' ela= 1 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1156390954984226
+WAIT #1: nam='SQL*Net message from client' ela= 1112 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1156390954985376
+WAIT #0: nam='SQL*Net message to client' ela= 0 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1156390954985446
+*** 2007-07-11 10:59:01.581
+WAIT #0: nam='SQL*Net message from client' ela= 3590435 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1156390958575912
+=====================
+PARSING IN CURSOR #2 len=950 dep=0 uid=29 oct=47 lid=29 tim=1156390958576361 hv=1966372119 ad='6b5eea58'
+BEGIN
+  dbms_session.set_identifier(client_id=>'helicon.cha.trivadis.com');
+  dbms_application_info.set_module(module_name=>'Module 1',
+                                   action_name=>'Action 11');
+  -- code module 1, action 11
+  dbms_lock.sleep(1);
+  dbms_application_info.set_module(module_name=>'Module 1',
+                                   action_name=>'Action 12');
+  -- code module 1, action 12
+  dbms_lock.sleep(1);
+  dbms_application_info.set_module(module_name=>'Module 1',
+                                   action_name=>'Action 13');
+  -- code module 1, action 13
+  dbms_lock.sleep(1);
+  dbms_application_info.set_module(module_name=>'Module 2',
+                                   action_name=>'Action 21');
+  -- code module 2, action 21
+  dbms_lock.sleep(1);
+  dbms_application_info.set_module(module_name=>'Module 2',
+                                   action_name=>'Action 22');
+  -- code module 2, action 22
+  dbms_lock.sleep(1);
+END;
+END OF STMT
+PARSE #2:c=999,e=361,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=1,tim=1156390958576358
+*** ACTION NAME:(Action 11) 2007-07-11 10:59:01.582
+*** MODULE NAME:(Module 1) 2007-07-11 10:59:01.582
+*** CLIENT ID:(helicon.cha.trivadis.com) 2007-07-11 10:59:01.582
+WAIT #2: nam='PL/SQL lock timer' ela= 4 duration=100 p2=0 p3=0 obj#=-1 tim=1156390958576758
+WAIT #2: nam='PL/SQL lock timer' ela= 977343 duration=100 p2=0 p3=0 obj#=-1 tim=1156390959554150
+*** ACTION NAME:(Action 12) 2007-07-11 10:59:03.583
+*** MODULE NAME:(Module 1) 2007-07-11 10:59:03.583
+WAIT #2: nam='PL/SQL lock timer' ela= 976915 duration=100 p2=0 p3=0 obj#=-1 tim=1156390960531114
+*** ACTION NAME:(Action 13) 2007-07-11 10:59:04.585
+*** MODULE NAME:(Module 1) 2007-07-11 10:59:04.585
+WAIT #2: nam='PL/SQL lock timer' ela= 978021 duration=100 p2=0 p3=0 obj#=-1 tim=1156390961509197
+*** ACTION NAME:(Action 21) 2007-07-11 10:59:05.585
+*** MODULE NAME:(Module 2) 2007-07-11 10:59:05.585
+WAIT #2: nam='PL/SQL lock timer' ela= 976931 duration=100 p2=0 p3=0 obj#=-1 tim=1156390962486181
+*** ACTION NAME:(Action 22) 2007-07-11 10:59:06.586
+*** MODULE NAME:(Module 2) 2007-07-11 10:59:06.586
+WAIT #2: nam='PL/SQL lock timer' ela= 977052 duration=100 p2=0 p3=0 obj#=-1 tim=1156390963463304
+EXEC #2:c=0,e=4886856,p=0,cr=0,cu=0,mis=0,r=1,dep=0,og=1,tim=1156390963463359
+WAIT #2: nam='SQL*Net message to client' ela= 2 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1156390963463428
+WAIT #2: nam='SQL*Net message from client' ela= 1341 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1156390963464801
+WAIT #0: nam='SQL*Net message to client' ela= 1 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1156390963464918
+WAIT #0: nam='SQL*Net message from client' ela= 1096958 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1156390964561895
+=====================
+PARSING IN CURSOR #1 len=48 dep=0 uid=29 oct=47 lid=29 tim=1156390964562030 hv=3585424577 ad='6b5ef2b8'
+BEGIN dbms_monitor.session_trace_disable; END;
+END OF STMT
+PARSE #1:c=0,e=92,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=1,tim=1156390964562027
+EXEC #1:c=0,e=105,p=0,cr=0,cu=0,mis=0,r=1,dep=0,og=1,tim=1156390964562177

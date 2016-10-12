@@ -1,0 +1,2442 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TVD$XTAT Output</title>
+<style type="text/css">
+				body { background-color: rgb(246,246,246); }
+				h1 { color: rgb(0,51,102); font-family: helvetica; font-size: 15pt; font-weight: bold; }
+				h2 { color: rgb(0,51,102); font-family: helvetica; font-size: 13pt; font-weight: bold; }
+				h3 { color: rgb(0,51,102); font-family: helvetica; font-size: 11pt; font-weight: bold; }
+				p { color: rgb(0,51,102); font-family: helvetica; font-size: 10pt; font-weight: normal; }
+				a { color: rgb(0,51,102); font-family: helvetica; font-size: 10pt; font-weight: normal; }
+				a.th { color: rgb(246,246,246); background-color: rgb(102,102,102); font-family: helvetica; font-size: 10pt; font-weight: bold; }
+				p.error { color: rgb(255,0,0); font-family: helvetica; font-size: 10pt; font-weight: normal; }
+				th.color { color: rgb(246,246,246); background-color: rgb(102,102,102); font-family: helvetica; font-size: 10pt; font-weight: bold; }
+				th.no_color { color: rgb(0,51,102); font-family: helvetica; font-size: 10pt; font-weight: bold; }
+				td.color { color: rgb(0,51,102); background-color: rgb(255,225,225); font-family: helvetica; font-size: 10pt; font-weight: normal; }
+				td.no_color { color: rgb(0,51,102); font-family: helvetica; font-size: 10pt; font-weight: normal; }
+			</style>
+</head>
+<body>
+<table>
+<tr>
+<td width="100%" colspan="2" class="title">
+<h1>TriVaDis eXtended Tracefile Analysis Tool 4.0 Beta 6 (28 February 2008 20:02)</h1>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" class="no_color"><a href="mailto:christian.antognini@trivadis.com">Copyright 2000-2008 by Christian Antognini</a></td><td width="50%" valign="top" class="no_color"><a href="http://www.trivadis.com">Trivadis AG</a>
+<br>Europa-Strasse 5
+						<br>CH-8152 Glattbrugg / Z&uuml;rich
+					</td>
+</tr>
+</table>
+<h1>
+<a name="top"></a>Overall Information</h1>
+<h2>Database Version</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<td align="left" class="no_color">With the Partitioning, Oracle Label Security, OLAP, Data Mining</td>
+</tr>
+</table>
+<h2>Analyzed Trace File</h2>
+<p>Trace file /u00/app/oracle/diag/rdbms/dbm11106/DBM11106/trace/DBM11106_ora_6334.trc<br>
+</p>
+<h2>Interval</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<td align="left" class="no_color">Beginning</td><td align="left" class="no_color">29 Feb 2008 07:43:11</td>
+</tr>
+<tr valign="top">
+<td align="left" class="no_color">End</td><td align="left" class="no_color">29 Feb 2008 07:43:17</td>
+</tr>
+<tr valign="top">
+<td align="left" class="no_color">Duration</td><td align="left" class="no_color">5.666&nbsp;<a href="#units">[s]</a></td>
+</tr>
+</table>
+<h2>Transactions</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<td align="left" class="no_color">Committed</td><td align="left" class="no_color">1</td>
+</tr>
+<tr valign="top">
+<td align="left" class="no_color">Rollbacked</td><td align="left" class="no_color">0</td>
+</tr>
+</table>
+<h2>Resource Usage Profile&nbsp;&nbsp;<a href="#top">overall</a>&nbsp;<a href="#">current</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Component</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#db%20file%20scattered%20read-">db file scattered read</a></td><td class="no_color"></td><td align="right" class="color">1.769</td><td class="no_color"></td><td align="right" class="color">31.224</td><td class="no_color"></td><td align="right" class="color">225</td><td class="no_color"></td><td align="right" class="color">0.008</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#CPU-">CPU</a></td><td class="no_color"></td><td align="right" class="color">1.458</td><td class="no_color"></td><td align="right" class="color">25.730</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#direct%20path%20read%20temp-">direct path read temp</a></td><td class="no_color"></td><td align="right" class="color">1.005</td><td class="no_color"></td><td align="right" class="color">17.731</td><td class="no_color"></td><td align="right" class="color">941</td><td class="no_color"></td><td align="right" class="color">0.001</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#db%20file%20sequential%20read-">db file sequential read</a></td><td class="no_color"></td><td align="right" class="color">0.710</td><td class="no_color"></td><td align="right" class="color">12.530</td><td class="no_color"></td><td align="right" class="color">176</td><td class="no_color"></td><td align="right" class="color">0.004</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#direct%20path%20write%20temp-">direct path write temp</a></td><td class="no_color"></td><td align="right" class="color">0.408</td><td class="no_color"></td><td align="right" class="color">7.195</td><td class="no_color"></td><td align="right" class="color">941</td><td class="no_color"></td><td align="right" class="color">0.000</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">unaccounted-for</td><td class="no_color"></td><td align="right" class="color">0.307</td><td class="no_color"></td><td align="right" class="color">5.425</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#SQL*Net%20message%20from%20client-">SQL*Net message from client</a></td><td class="no_color"></td><td align="right" class="color">0.009</td><td class="no_color"></td><td align="right" class="color">0.155</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">0.004</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#log%20file%20sync-">log file sync</a></td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.010</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">0.000</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#SQL*Net%20message%20to%20client-">SQL*Net message to client</a></td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">0.000</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">5.666</td><td class="no_color"></td><td align="right" class="color">100.000</td>
+</tr>
+</table>
+<p>
+		The input file contains 182 distinct statements, 
+		180 of them are recursive.
+			</p>
+<p>
+			Only
+			
+			non-recursive statements are reported in the following table.
+		</p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Statement ID</th><th class="no_color"></th><th align="left" class="color">Type</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Executions</th><th class="no_color"></th><th align="right" class="color">Duration per Execution <a href="#units" class="th">[s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#1">1</a></td><td class="no_color"></td><td align="left" class="color">PL/SQL</td><td class="no_color"></td><td align="right" class="color">5.333</td><td class="no_color"></td><td align="right" class="color">94.119</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">5.333</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#35">35</a></td><td class="no_color"></td><td align="left" class="color">PL/SQL</td><td class="no_color"></td><td align="right" class="color">0.010</td><td class="no_color"></td><td align="right" class="color">0.184</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.010</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="left" class="color"></td><td class="no_color"></td><td align="right" class="color">5.343</td><td class="no_color"></td><td align="right" class="color">94.303</td>
+</tr>
+</table>
+<h2>
+<a name="db%20file%20scattered%20read-"></a>db file scattered read&nbsp;&nbsp;
+		<a href="#top">overall</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Blocks per Event <a href="#units" class="th">[b]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">128 &ge; duration &lt; 256</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.027</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">0.889</td><td class="no_color"></td><td align="right" class="color">242</td><th class="no_color"></th><td align="right" class="color">8</td><th class="no_color"></th><td align="right" class="color">4.000</td>
+</tr>
+<tr>
+<td align="center" class="color">256 &ge; duration &lt; 512</td><td class="no_color"></td><td align="right" class="color">0.041</td><td class="no_color"></td><td align="right" class="color">2.345</td><td class="no_color"></td><td align="right" class="color">111</td><td class="no_color"></td><td align="right" class="color">49.333</td><td class="no_color"></td><td align="right" class="color">374</td><th class="no_color"></th><td align="right" class="color">798</td><th class="no_color"></th><td align="right" class="color">7.189</td>
+</tr>
+<tr>
+<td align="center" class="color">512 &ge; duration &lt; 1024</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.300</td><td class="no_color"></td><td align="right" class="color">8</td><td class="no_color"></td><td align="right" class="color">3.556</td><td class="no_color"></td><td align="right" class="color">663</td><th class="no_color"></th><td align="right" class="color">58</td><th class="no_color"></th><td align="right" class="color">7.250</td>
+</tr>
+<tr>
+<td align="center" class="color">1024 &ge; duration &lt; 2048</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.444</td><td class="no_color"></td><td align="right" class="color">1,222</td><th class="no_color"></th><td align="right" class="color">7</td><th class="no_color"></th><td align="right" class="color">7.000</td>
+</tr>
+<tr>
+<td align="center" class="color">2048 &ge; duration &lt; 4096</td><td class="no_color"></td><td align="right" class="color">0.009</td><td class="no_color"></td><td align="right" class="color">0.487</td><td class="no_color"></td><td align="right" class="color">3</td><td class="no_color"></td><td align="right" class="color">1.333</td><td class="no_color"></td><td align="right" class="color">2,872</td><th class="no_color"></th><td align="right" class="color">22</td><th class="no_color"></th><td align="right" class="color">7.333</td>
+</tr>
+<tr>
+<td align="center" class="color">4096 &ge; duration &lt; 8192</td><td class="no_color"></td><td align="right" class="color">0.078</td><td class="no_color"></td><td align="right" class="color">4.415</td><td class="no_color"></td><td align="right" class="color">11</td><td class="no_color"></td><td align="right" class="color">4.889</td><td class="no_color"></td><td align="right" class="color">7,100</td><th class="no_color"></th><td align="right" class="color">77</td><th class="no_color"></th><td align="right" class="color">7.000</td>
+</tr>
+<tr>
+<td align="center" class="color">8192 &ge; duration &lt; 16384</td><td class="no_color"></td><td align="right" class="color">0.482</td><td class="no_color"></td><td align="right" class="color">27.220</td><td class="no_color"></td><td align="right" class="color">41</td><td class="no_color"></td><td align="right" class="color">18.222</td><td class="no_color"></td><td align="right" class="color">11,745</td><th class="no_color"></th><td align="right" class="color">295</td><th class="no_color"></th><td align="right" class="color">7.195</td>
+</tr>
+<tr>
+<td align="center" class="color">16384 &ge; duration &lt; 32768</td><td class="no_color"></td><td align="right" class="color">0.957</td><td class="no_color"></td><td align="right" class="color">54.090</td><td class="no_color"></td><td align="right" class="color">43</td><td class="no_color"></td><td align="right" class="color">19.111</td><td class="no_color"></td><td align="right" class="color">22,253</td><th class="no_color"></th><td align="right" class="color">316</td><th class="no_color"></th><td align="right" class="color">7.349</td>
+</tr>
+<tr>
+<td align="center" class="color">32768 &ge; duration &lt; 65536</td><td class="no_color"></td><td align="right" class="color">0.195</td><td class="no_color"></td><td align="right" class="color">11.046</td><td class="no_color"></td><td align="right" class="color">5</td><td class="no_color"></td><td align="right" class="color">2.222</td><td class="no_color"></td><td align="right" class="color">39,084</td><th class="no_color"></th><td align="right" class="color">36</td><th class="no_color"></th><td align="right" class="color">7.200</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">1.769</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">225</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">7,863</td><td class="no_color"></td><td align="right" class="color">1,617</td><td class="no_color"></td><td align="right" class="color">7.187</td>
+</tr>
+</table>
+<p></p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">File</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">4</td><td class="no_color"></td><td align="right" class="color">1.769</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">225</td><th class="no_color"></th><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">1,617</td><th class="no_color"></th><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">7,863</td>
+</tr>
+</table>
+<p> 
+					1 statement contributed to this event.
+				</p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Statement ID</th><th class="no_color"></th><th align="left" class="color">Type</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color"><a href="#2">2</a></td><td class="no_color"></td><td align="left" class="color">SELECT</td><td class="no_color"></td><td align="right" class="color">1.769</td><td class="no_color"></td><td align="right" class="color">100.000</td>
+</tr>
+</table>
+<h2>
+<a name="CPU-"></a>CPU&nbsp;&nbsp;
+		<a href="#top">overall</a>
+</h2>
+<p>182 statements contributed to this event.
+				<br>
+				Only the top 100 contributors are reported in the following table.
+			</p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Statement ID</th><th class="no_color"></th><th align="left" class="color">Type</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color"><a href="#2">2</a></td><td class="no_color"></td><td align="left" class="color">SELECT</td><td class="no_color"></td><td align="right" class="color">1.138</td><td class="no_color"></td><td align="right" class="color">78.052</td>
+</tr>
+<tr>
+<td align="left" class="color">3</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.036</td><td class="no_color"></td><td align="right" class="color">2.469</td>
+</tr>
+<tr>
+<td align="left" class="color"><a href="#1">1</a></td><td class="no_color"></td><td align="left" class="color">PL/SQL</td><td class="no_color"></td><td align="right" class="color">0.018</td><td class="no_color"></td><td align="right" class="color">1.235</td>
+</tr>
+<tr>
+<td align="left" class="color">4</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.014</td><td class="no_color"></td><td align="right" class="color">0.960</td>
+</tr>
+<tr>
+<td align="left" class="color">7</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.012</td><td class="no_color"></td><td align="right" class="color">0.823</td>
+</tr>
+<tr>
+<td align="left" class="color">11</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.011</td><td class="no_color"></td><td align="right" class="color">0.755</td>
+</tr>
+<tr>
+<td align="left" class="color">5</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.011</td><td class="no_color"></td><td align="right" class="color">0.754</td>
+</tr>
+<tr>
+<td align="left" class="color">20</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.010</td><td class="no_color"></td><td align="right" class="color">0.686</td>
+</tr>
+<tr>
+<td align="left" class="color">40</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.007</td><td class="no_color"></td><td align="right" class="color">0.480</td>
+</tr>
+<tr>
+<td align="left" class="color">9</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">0.412</td>
+</tr>
+<tr>
+<td align="left" class="color">31</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">0.412</td>
+</tr>
+<tr>
+<td align="left" class="color">45</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">0.412</td>
+</tr>
+<tr>
+<td align="left" class="color">14</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">0.412</td>
+</tr>
+<tr>
+<td align="left" class="color">8</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.343</td>
+</tr>
+<tr>
+<td align="left" class="color">13</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.343</td>
+</tr>
+<tr>
+<td align="left" class="color">43</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.343</td>
+</tr>
+<tr>
+<td align="left" class="color">50</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.343</td>
+</tr>
+<tr>
+<td align="left" class="color">51</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.343</td>
+</tr>
+<tr>
+<td align="left" class="color">24</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.343</td>
+</tr>
+<tr>
+<td align="left" class="color">26</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.274</td>
+</tr>
+<tr>
+<td align="left" class="color">30</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.274</td>
+</tr>
+<tr>
+<td align="left" class="color">37</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.274</td>
+</tr>
+<tr>
+<td align="left" class="color">46</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.274</td>
+</tr>
+<tr>
+<td align="left" class="color">52</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.274</td>
+</tr>
+<tr>
+<td align="left" class="color">54</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.274</td>
+</tr>
+<tr>
+<td align="left" class="color">15</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.274</td>
+</tr>
+<tr>
+<td align="left" class="color"><a href="#35">35</a></td><td class="no_color"></td><td align="left" class="color">PL/SQL</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.274</td>
+</tr>
+<tr>
+<td align="left" class="color">56</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.274</td>
+</tr>
+<tr>
+<td align="left" class="color">17</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.206</td>
+</tr>
+<tr>
+<td align="left" class="color">38</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.206</td>
+</tr>
+<tr>
+<td align="left" class="color">47</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.206</td>
+</tr>
+<tr>
+<td align="left" class="color">57</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.206</td>
+</tr>
+<tr>
+<td align="left" class="color">58</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.206</td>
+</tr>
+<tr>
+<td align="left" class="color">6</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.206</td>
+</tr>
+<tr>
+<td align="left" class="color">22</td><td class="no_color"></td><td align="left" class="color">UPDATE
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.206</td>
+</tr>
+<tr>
+<td align="left" class="color">59</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.206</td>
+</tr>
+<tr>
+<td align="left" class="color">60</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.206</td>
+</tr>
+<tr>
+<td align="left" class="color">18</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">29</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">41</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">44</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">49</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">61</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">62</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">63</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">64</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">66</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">67</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">68</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">69</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">32</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">55</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">70</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">71</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">72</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">73</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">74</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">75</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.137</td>
+</tr>
+<tr>
+<td align="left" class="color">10</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">23</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">25</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">34</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">36</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">39</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">53</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">65</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">76</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">77</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">79</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">80</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">82</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">83</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">84</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">85</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">86</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">87</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">88</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">89</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">90</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">91</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">92</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">93</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">94</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">95</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">96</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">97</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">98</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">99</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">100</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">101</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">102</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">103</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">104</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">105</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">16</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">19</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">27</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">48</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">106</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr>
+<td align="left" class="color">107</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="left" class="color"></td><td class="no_color"></td><td align="right" class="color">1.458</td><td class="no_color"></td><td align="right" class="color">100.000</td>
+</tr>
+</table>
+<h2>
+<a name="direct%20path%20read%20temp-"></a>direct path read temp&nbsp;&nbsp;
+		<a href="#top">overall</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Blocks per Event <a href="#units" class="th">[b]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">0 &ge; duration &lt; 2</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">5</td><td class="no_color"></td><td align="right" class="color">0.531</td><td class="no_color"></td><td align="right" class="color">1</td><th class="no_color"></th><td align="right" class="color">5</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">2 &ge; duration &lt; 4</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.242</td><td class="no_color"></td><td align="right" class="color">714</td><td class="no_color"></td><td align="right" class="color">75.877</td><td class="no_color"></td><td align="right" class="color">3</td><th class="no_color"></th><td align="right" class="color">714</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">4 &ge; duration &lt; 8</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.013</td><td class="no_color"></td><td align="right" class="color">24</td><td class="no_color"></td><td align="right" class="color">2.550</td><td class="no_color"></td><td align="right" class="color">5</td><th class="no_color"></th><td align="right" class="color">24</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">8 &ge; duration &lt; 16</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.010</td><td class="no_color"></td><td align="right" class="color">7</td><td class="no_color"></td><td align="right" class="color">0.744</td><td class="no_color"></td><td align="right" class="color">14</td><th class="no_color"></th><td align="right" class="color">7</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">16 &ge; duration &lt; 32</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.025</td><td class="no_color"></td><td align="right" class="color">10</td><td class="no_color"></td><td align="right" class="color">1.063</td><td class="no_color"></td><td align="right" class="color">25</td><th class="no_color"></th><td align="right" class="color">10</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">32 &ge; duration &lt; 64</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.058</td><td class="no_color"></td><td align="right" class="color">13</td><td class="no_color"></td><td align="right" class="color">1.382</td><td class="no_color"></td><td align="right" class="color">45</td><th class="no_color"></th><td align="right" class="color">13</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">64 &ge; duration &lt; 128</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.128</td><td class="no_color"></td><td align="right" class="color">14</td><td class="no_color"></td><td align="right" class="color">1.488</td><td class="no_color"></td><td align="right" class="color">92</td><th class="no_color"></th><td align="right" class="color">14</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">128 &ge; duration &lt; 256</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.284</td><td class="no_color"></td><td align="right" class="color">16</td><td class="no_color"></td><td align="right" class="color">1.700</td><td class="no_color"></td><td align="right" class="color">178</td><th class="no_color"></th><td align="right" class="color">16</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">256 &ge; duration &lt; 512</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.249</td><td class="no_color"></td><td align="right" class="color">7</td><td class="no_color"></td><td align="right" class="color">0.744</td><td class="no_color"></td><td align="right" class="color">357</td><th class="no_color"></th><td align="right" class="color">7</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">512 &ge; duration &lt; 1024</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.529</td><td class="no_color"></td><td align="right" class="color">7</td><td class="no_color"></td><td align="right" class="color">0.744</td><td class="no_color"></td><td align="right" class="color">760</td><th class="no_color"></th><td align="right" class="color">7</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">1024 &ge; duration &lt; 2048</td><td class="no_color"></td><td align="right" class="color">0.013</td><td class="no_color"></td><td align="right" class="color">1.332</td><td class="no_color"></td><td align="right" class="color">9</td><td class="no_color"></td><td align="right" class="color">0.956</td><td class="no_color"></td><td align="right" class="color">1,487</td><th class="no_color"></th><td align="right" class="color">9</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">2048 &ge; duration &lt; 4096</td><td class="no_color"></td><td align="right" class="color">0.067</td><td class="no_color"></td><td align="right" class="color">6.646</td><td class="no_color"></td><td align="right" class="color">22</td><td class="no_color"></td><td align="right" class="color">2.338</td><td class="no_color"></td><td align="right" class="color">3,035</td><th class="no_color"></th><td align="right" class="color">22</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">4096 &ge; duration &lt; 8192</td><td class="no_color"></td><td align="right" class="color">0.298</td><td class="no_color"></td><td align="right" class="color">29.663</td><td class="no_color"></td><td align="right" class="color">50</td><td class="no_color"></td><td align="right" class="color">5.313</td><td class="no_color"></td><td align="right" class="color">5,960</td><th class="no_color"></th><td align="right" class="color">50</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">8192 &ge; duration &lt; 16384</td><td class="no_color"></td><td align="right" class="color">0.334</td><td class="no_color"></td><td align="right" class="color">33.260</td><td class="no_color"></td><td align="right" class="color">31</td><td class="no_color"></td><td align="right" class="color">3.294</td><td class="no_color"></td><td align="right" class="color">10,778</td><th class="no_color"></th><td align="right" class="color">31</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">16384 &ge; duration &lt; 32768</td><td class="no_color"></td><td align="right" class="color">0.241</td><td class="no_color"></td><td align="right" class="color">23.942</td><td class="no_color"></td><td align="right" class="color">11</td><td class="no_color"></td><td align="right" class="color">1.169</td><td class="no_color"></td><td align="right" class="color">21,865</td><th class="no_color"></th><td align="right" class="color">11</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">32768 &ge; duration &lt; 65536</td><td class="no_color"></td><td align="right" class="color">0.036</td><td class="no_color"></td><td align="right" class="color">3.619</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.106</td><td class="no_color"></td><td align="right" class="color">36,358</td><th class="no_color"></th><td align="right" class="color">1</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">1.005</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">941</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">1,068</td><td class="no_color"></td><td align="right" class="color">941</td><td class="no_color"></td><td align="right" class="color">1.000</td>
+</tr>
+</table>
+<p></p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">File</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">201</td><td class="no_color"></td><td align="right" class="color">1.005</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">941</td><th class="no_color"></th><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">941</td><th class="no_color"></th><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">1,068</td>
+</tr>
+</table>
+<p> 
+					1 statement contributed to this event.
+				</p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Statement ID</th><th class="no_color"></th><th align="left" class="color">Type</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color"><a href="#2">2</a></td><td class="no_color"></td><td align="left" class="color">SELECT</td><td class="no_color"></td><td align="right" class="color">1.005</td><td class="no_color"></td><td align="right" class="color">100.000</td>
+</tr>
+</table>
+<h2>
+<a name="db%20file%20sequential%20read-"></a>db file sequential read&nbsp;&nbsp;
+		<a href="#top">overall</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Blocks per Event <a href="#units" class="th">[b]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">128 &ge; duration &lt; 256</td><td class="no_color"></td><td align="right" class="color">0.015</td><td class="no_color"></td><td align="right" class="color">2.101</td><td class="no_color"></td><td align="right" class="color">86</td><td class="no_color"></td><td align="right" class="color">48.864</td><td class="no_color"></td><td align="right" class="color">173</td><th class="no_color"></th><td align="right" class="color">86</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">256 &ge; duration &lt; 512</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.196</td><td class="no_color"></td><td align="right" class="color">4</td><td class="no_color"></td><td align="right" class="color">2.273</td><td class="no_color"></td><td align="right" class="color">348</td><th class="no_color"></th><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">512 &ge; duration &lt; 1024</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.234</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">1.136</td><td class="no_color"></td><td align="right" class="color">830</td><th class="no_color"></th><td align="right" class="color">2</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">1024 &ge; duration &lt; 2048</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.311</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">1.136</td><td class="no_color"></td><td align="right" class="color">1,104</td><th class="no_color"></th><td align="right" class="color">2</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">2048 &ge; duration &lt; 4096</td><td class="no_color"></td><td align="right" class="color">0.045</td><td class="no_color"></td><td align="right" class="color">6.291</td><td class="no_color"></td><td align="right" class="color">13</td><td class="no_color"></td><td align="right" class="color">7.386</td><td class="no_color"></td><td align="right" class="color">3,435</td><th class="no_color"></th><td align="right" class="color">13</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">4096 &ge; duration &lt; 8192</td><td class="no_color"></td><td align="right" class="color">0.141</td><td class="no_color"></td><td align="right" class="color">19.833</td><td class="no_color"></td><td align="right" class="color">24</td><td class="no_color"></td><td align="right" class="color">13.636</td><td class="no_color"></td><td align="right" class="color">5,867</td><th class="no_color"></th><td align="right" class="color">24</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">8192 &ge; duration &lt; 16384</td><td class="no_color"></td><td align="right" class="color">0.440</td><td class="no_color"></td><td align="right" class="color">61.916</td><td class="no_color"></td><td align="right" class="color">42</td><td class="no_color"></td><td align="right" class="color">23.864</td><td class="no_color"></td><td align="right" class="color">10,466</td><th class="no_color"></th><td align="right" class="color">42</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">16384 &ge; duration &lt; 32768</td><td class="no_color"></td><td align="right" class="color">0.065</td><td class="no_color"></td><td align="right" class="color">9.119</td><td class="no_color"></td><td align="right" class="color">3</td><td class="no_color"></td><td align="right" class="color">1.705</td><td class="no_color"></td><td align="right" class="color">21,579</td><th class="no_color"></th><td align="right" class="color">3</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">0.710</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">176</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">4,034</td><td class="no_color"></td><td align="right" class="color">176</td><td class="no_color"></td><td align="right" class="color">1.000</td>
+</tr>
+</table>
+<p></p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">File</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.560</td><td class="no_color"></td><td align="right" class="color">78.820</td><td class="no_color"></td><td align="right" class="color">143</td><th class="no_color"></th><td align="right" class="color">81.250</td><td class="no_color"></td><td align="right" class="color">143</td><th class="no_color"></th><td align="right" class="color">81.250</td><td class="no_color"></td><td align="right" class="color">3,913</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">4</td><td class="no_color"></td><td align="right" class="color">0.113</td><td class="no_color"></td><td align="right" class="color">15.895</td><td class="no_color"></td><td align="right" class="color">30</td><th class="no_color"></th><td align="right" class="color">17.045</td><td class="no_color"></td><td align="right" class="color">30</td><th class="no_color"></th><td align="right" class="color">17.045</td><td class="no_color"></td><td align="right" class="color">3,762</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">3</td><td class="no_color"></td><td align="right" class="color">0.038</td><td class="no_color"></td><td align="right" class="color">5.285</td><td class="no_color"></td><td align="right" class="color">3</td><th class="no_color"></th><td align="right" class="color">1.705</td><td class="no_color"></td><td align="right" class="color">3</td><th class="no_color"></th><td align="right" class="color">1.705</td><td class="no_color"></td><td align="right" class="color">12,506</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Total</td><th class="no_color"></th><td align="right" class="color">0.710</td><th class="no_color"></th><td align="right" class="color">100.000</td><th class="no_color"></th><td align="right" class="color">176</td><th class="no_color"></th><td align="right" class="color">100.000</td><th class="no_color"></th><td align="right" class="color">176</td><th class="no_color"></th><td align="right" class="color">100.000</td><th class="no_color"></th><td align="right" class="color">4,034</td>
+</tr>
+</table>
+<p>63 statements contributed to this event.
+				</p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Statement ID</th><th class="no_color"></th><th align="left" class="color">Type</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color"><a href="#2">2</a></td><td class="no_color"></td><td align="left" class="color">SELECT</td><td class="no_color"></td><td align="right" class="color">0.136</td><td class="no_color"></td><td align="right" class="color">19.091</td>
+</tr>
+<tr>
+<td align="left" class="color">10</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.034</td><td class="no_color"></td><td align="right" class="color">4.752</td>
+</tr>
+<tr>
+<td align="left" class="color">8</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.033</td><td class="no_color"></td><td align="right" class="color">4.603</td>
+</tr>
+<tr>
+<td align="left" class="color">5</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.032</td><td class="no_color"></td><td align="right" class="color">4.566</td>
+</tr>
+<tr>
+<td align="left" class="color">12</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.030</td><td class="no_color"></td><td align="right" class="color">4.287</td>
+</tr>
+<tr>
+<td align="left" class="color">16</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.025</td><td class="no_color"></td><td align="right" class="color">3.588</td>
+</tr>
+<tr>
+<td align="left" class="color">13</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.024</td><td class="no_color"></td><td align="right" class="color">3.322</td>
+</tr>
+<tr>
+<td align="left" class="color">3</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.023</td><td class="no_color"></td><td align="right" class="color">3.252</td>
+</tr>
+<tr>
+<td align="left" class="color">15</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.023</td><td class="no_color"></td><td align="right" class="color">3.248</td>
+</tr>
+<tr>
+<td align="left" class="color">14</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.022</td><td class="no_color"></td><td align="right" class="color">3.124</td>
+</tr>
+<tr>
+<td align="left" class="color">7</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.021</td><td class="no_color"></td><td align="right" class="color">2.984</td>
+</tr>
+<tr>
+<td align="left" class="color">17</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.021</td><td class="no_color"></td><td align="right" class="color">2.977</td>
+</tr>
+<tr>
+<td align="left" class="color">18</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.021</td><td class="no_color"></td><td align="right" class="color">2.919</td>
+</tr>
+<tr>
+<td align="left" class="color">19</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.020</td><td class="no_color"></td><td align="right" class="color">2.863</td>
+</tr>
+<tr>
+<td align="left" class="color">21</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.018</td><td class="no_color"></td><td align="right" class="color">2.558</td>
+</tr>
+<tr>
+<td align="left" class="color">23</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.016</td><td class="no_color"></td><td align="right" class="color">2.313</td>
+</tr>
+<tr>
+<td align="left" class="color">22</td><td class="no_color"></td><td align="left" class="color">UPDATE
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.015</td><td class="no_color"></td><td align="right" class="color">2.089</td>
+</tr>
+<tr>
+<td align="left" class="color">25</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.014</td><td class="no_color"></td><td align="right" class="color">1.959</td>
+</tr>
+<tr>
+<td align="left" class="color">6</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.013</td><td class="no_color"></td><td align="right" class="color">1.861</td>
+</tr>
+<tr>
+<td align="left" class="color">28</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.013</td><td class="no_color"></td><td align="right" class="color">1.856</td>
+</tr>
+<tr>
+<td align="left" class="color">27</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.013</td><td class="no_color"></td><td align="right" class="color">1.808</td>
+</tr>
+<tr>
+<td align="left" class="color">11</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.011</td><td class="no_color"></td><td align="right" class="color">1.614</td>
+</tr>
+<tr>
+<td align="left" class="color">33</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.011</td><td class="no_color"></td><td align="right" class="color">1.574</td>
+</tr>
+<tr>
+<td align="left" class="color">29</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.011</td><td class="no_color"></td><td align="right" class="color">1.558</td>
+</tr>
+<tr>
+<td align="left" class="color">26</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.010</td><td class="no_color"></td><td align="right" class="color">1.434</td>
+</tr>
+<tr>
+<td align="left" class="color">32</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.010</td><td class="no_color"></td><td align="right" class="color">1.406</td>
+</tr>
+<tr>
+<td align="left" class="color">34</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.010</td><td class="no_color"></td><td align="right" class="color">1.353</td>
+</tr>
+<tr>
+<td align="left" class="color">36</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.009</td><td class="no_color"></td><td align="right" class="color">1.278</td>
+</tr>
+<tr>
+<td align="left" class="color">4</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.009</td><td class="no_color"></td><td align="right" class="color">1.270</td>
+</tr>
+<tr>
+<td align="left" class="color">30</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.009</td><td class="no_color"></td><td align="right" class="color">1.264</td>
+</tr>
+<tr>
+<td align="left" class="color">39</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.007</td><td class="no_color"></td><td align="right" class="color">0.960</td>
+</tr>
+<tr>
+<td align="left" class="color">42</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.007</td><td class="no_color"></td><td align="right" class="color">0.947</td>
+</tr>
+<tr>
+<td align="left" class="color">31</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">0.849</td>
+</tr>
+<tr>
+<td align="left" class="color">41</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.720</td>
+</tr>
+<tr>
+<td align="left" class="color">48</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.678</td>
+</tr>
+<tr>
+<td align="left" class="color">44</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.628</td>
+</tr>
+<tr>
+<td align="left" class="color">53</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.528</td>
+</tr>
+<tr>
+<td align="left" class="color">49</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.511</td>
+</tr>
+<tr>
+<td align="left" class="color">47</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.411</td>
+</tr>
+<tr>
+<td align="left" class="color">81</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.159</td>
+</tr>
+<tr>
+<td align="left" class="color">61</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.118</td>
+</tr>
+<tr>
+<td align="left" class="color">62</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.054</td>
+</tr>
+<tr>
+<td align="left" class="color">9</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.053</td>
+</tr>
+<tr>
+<td align="left" class="color">54</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.053</td>
+</tr>
+<tr>
+<td align="left" class="color">20</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.046</td>
+</tr>
+<tr>
+<td align="left" class="color">24</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.046</td>
+</tr>
+<tr>
+<td align="left" class="color">38</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.046</td>
+</tr>
+<tr>
+<td align="left" class="color">43</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.045</td>
+</tr>
+<tr>
+<td align="left" class="color">76</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.027</td>
+</tr>
+<tr>
+<td align="left" class="color">55</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.027</td>
+</tr>
+<tr>
+<td align="left" class="color">77</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.026</td>
+</tr>
+<tr>
+<td align="left" class="color">111</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.026</td>
+</tr>
+<tr>
+<td align="left" class="color">112</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.026</td>
+</tr>
+<tr>
+<td align="left" class="color">113</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.026</td>
+</tr>
+<tr>
+<td align="left" class="color">50</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.026</td>
+</tr>
+<tr>
+<td align="left" class="color">114</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.025</td>
+</tr>
+<tr>
+<td align="left" class="color">78</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.025</td>
+</tr>
+<tr>
+<td align="left" class="color">115</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.025</td>
+</tr>
+<tr>
+<td align="left" class="color">40</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.024</td>
+</tr>
+<tr>
+<td align="left" class="color">79</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.024</td>
+</tr>
+<tr>
+<td align="left" class="color">80</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.024</td>
+</tr>
+<tr>
+<td align="left" class="color">51</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.024</td>
+</tr>
+<tr>
+<td align="left" class="color">116</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.022</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="left" class="color"></td><td class="no_color"></td><td align="right" class="color">0.710</td><td class="no_color"></td><td align="right" class="color">100.000</td>
+</tr>
+</table>
+<h2>
+<a name="direct%20path%20write%20temp-"></a>direct path write temp&nbsp;&nbsp;
+		<a href="#top">overall</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Blocks per Event <a href="#units" class="th">[b]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">0 &ge; duration &lt; 2</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.066</td><td class="no_color"></td><td align="right" class="color">270</td><td class="no_color"></td><td align="right" class="color">28.693</td><td class="no_color"></td><td align="right" class="color">1</td><th class="no_color"></th><td align="right" class="color">270</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">2 &ge; duration &lt; 4</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.402</td><td class="no_color"></td><td align="right" class="color">442</td><td class="no_color"></td><td align="right" class="color">46.971</td><td class="no_color"></td><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">442</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">4 &ge; duration &lt; 8</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.191</td><td class="no_color"></td><td align="right" class="color">149</td><td class="no_color"></td><td align="right" class="color">15.834</td><td class="no_color"></td><td align="right" class="color">5</td><th class="no_color"></th><td align="right" class="color">149</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">8 &ge; duration &lt; 16</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.049</td><td class="no_color"></td><td align="right" class="color">16</td><td class="no_color"></td><td align="right" class="color">1.700</td><td class="no_color"></td><td align="right" class="color">12</td><th class="no_color"></th><td align="right" class="color">16</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">16 &ge; duration &lt; 32</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.016</td><td class="no_color"></td><td align="right" class="color">3</td><td class="no_color"></td><td align="right" class="color">0.319</td><td class="no_color"></td><td align="right" class="color">21</td><th class="no_color"></th><td align="right" class="color">3</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">32 &ge; duration &lt; 64</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.022</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">0.213</td><td class="no_color"></td><td align="right" class="color">45</td><th class="no_color"></th><td align="right" class="color">2</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">64 &ge; duration &lt; 128</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.136</td><td class="no_color"></td><td align="right" class="color">6</td><td class="no_color"></td><td align="right" class="color">0.638</td><td class="no_color"></td><td align="right" class="color">92</td><th class="no_color"></th><td align="right" class="color">6</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">128 &ge; duration &lt; 256</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.527</td><td class="no_color"></td><td align="right" class="color">13</td><td class="no_color"></td><td align="right" class="color">1.382</td><td class="no_color"></td><td align="right" class="color">165</td><th class="no_color"></th><td align="right" class="color">13</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">256 &ge; duration &lt; 512</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.382</td><td class="no_color"></td><td align="right" class="color">4</td><td class="no_color"></td><td align="right" class="color">0.425</td><td class="no_color"></td><td align="right" class="color">390</td><th class="no_color"></th><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">512 &ge; duration &lt; 1024</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.418</td><td class="no_color"></td><td align="right" class="color">3</td><td class="no_color"></td><td align="right" class="color">0.319</td><td class="no_color"></td><td align="right" class="color">568</td><th class="no_color"></th><td align="right" class="color">3</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">1024 &ge; duration &lt; 2048</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">1.587</td><td class="no_color"></td><td align="right" class="color">4</td><td class="no_color"></td><td align="right" class="color">0.425</td><td class="no_color"></td><td align="right" class="color">1,617</td><th class="no_color"></th><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">2048 &ge; duration &lt; 4096</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">1.511</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">0.213</td><td class="no_color"></td><td align="right" class="color">3,080</td><th class="no_color"></th><td align="right" class="color">2</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">4096 &ge; duration &lt; 8192</td><td class="no_color"></td><td align="right" class="color">0.059</td><td class="no_color"></td><td align="right" class="color">14.595</td><td class="no_color"></td><td align="right" class="color">11</td><td class="no_color"></td><td align="right" class="color">1.169</td><td class="no_color"></td><td align="right" class="color">5,409</td><th class="no_color"></th><td align="right" class="color">11</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">8192 &ge; duration &lt; 16384</td><td class="no_color"></td><td align="right" class="color">0.095</td><td class="no_color"></td><td align="right" class="color">23.272</td><td class="no_color"></td><td align="right" class="color">8</td><td class="no_color"></td><td align="right" class="color">0.850</td><td class="no_color"></td><td align="right" class="color">11,858</td><th class="no_color"></th><td align="right" class="color">8</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">16384 &ge; duration &lt; 32768</td><td class="no_color"></td><td align="right" class="color">0.079</td><td class="no_color"></td><td align="right" class="color">19.388</td><td class="no_color"></td><td align="right" class="color">4</td><td class="no_color"></td><td align="right" class="color">0.425</td><td class="no_color"></td><td align="right" class="color">19,759</td><th class="no_color"></th><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">32768 &ge; duration &lt; 65536</td><td class="no_color"></td><td align="right" class="color">0.153</td><td class="no_color"></td><td align="right" class="color">37.439</td><td class="no_color"></td><td align="right" class="color">4</td><td class="no_color"></td><td align="right" class="color">0.425</td><td class="no_color"></td><td align="right" class="color">38,155</td><th class="no_color"></th><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">0.408</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">941</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">433</td><td class="no_color"></td><td align="right" class="color">941</td><td class="no_color"></td><td align="right" class="color">1.000</td>
+</tr>
+</table>
+<p></p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">File</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">201</td><td class="no_color"></td><td align="right" class="color">0.408</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">941</td><th class="no_color"></th><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">941</td><th class="no_color"></th><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">433</td>
+</tr>
+</table>
+<p> 
+					1 statement contributed to this event.
+				</p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Statement ID</th><th class="no_color"></th><th align="left" class="color">Type</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color"><a href="#2">2</a></td><td class="no_color"></td><td align="left" class="color">SELECT</td><td class="no_color"></td><td align="right" class="color">0.408</td><td class="no_color"></td><td align="right" class="color">100.000</td>
+</tr>
+</table>
+<h2>
+<a name="SQL*Net%20message%20from%20client-"></a>SQL*Net message from client&nbsp;&nbsp;
+		<a href="#top">overall</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">2048 &ge; duration &lt; 4096</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">27.035</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">50.000</td><td class="no_color"></td><td align="right" class="color">2,375</td>
+</tr>
+<tr>
+<td align="center" class="color">4096 &ge; duration &lt; 8192</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">72.965</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">50.000</td><td class="no_color"></td><td align="right" class="color">6,410</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">0.009</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">4,392</td>
+</tr>
+</table>
+<p></p>
+<p>2 statements contributed to this event.
+				</p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Statement ID</th><th class="no_color"></th><th align="left" class="color">Type</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color"><a href="#35">35</a></td><td class="no_color"></td><td align="left" class="color">PL/SQL</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">72.965</td>
+</tr>
+<tr>
+<td align="left" class="color"><a href="#1">1</a></td><td class="no_color"></td><td align="left" class="color">PL/SQL</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">27.035</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="left" class="color"></td><td class="no_color"></td><td align="right" class="color">0.009</td><td class="no_color"></td><td align="right" class="color">100.000</td>
+</tr>
+</table>
+<h2>
+<a name="log%20file%20sync-"></a>log file sync&nbsp;&nbsp;
+		<a href="#top">overall</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Blocks per Event <a href="#units" class="th">[b]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">4 &ge; duration &lt; 8</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">1.053</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">50.000</td><td class="no_color"></td><td align="right" class="color">6</td><th class="no_color"></th><td align="right" class="color">119</td><th class="no_color"></th><td align="right" class="color">119.000</td>
+</tr>
+<tr>
+<td align="center" class="color">512 &ge; duration &lt; 1024</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">98.947</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">50.000</td><td class="no_color"></td><td align="right" class="color">564</td><th class="no_color"></th><td align="right" class="color">119</td><th class="no_color"></th><td align="right" class="color">119.000</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">285</td><td class="no_color"></td><td align="right" class="color">238</td><td class="no_color"></td><td align="right" class="color">119.000</td>
+</tr>
+</table>
+<p></p>
+<h2>
+<a name="SQL*Net%20message%20to%20client-"></a>SQL*Net message to client&nbsp;&nbsp;
+		<a href="#top">overall</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">0 &ge; duration &lt; 2</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">2</td>
+</tr>
+</table>
+<p></p>
+<p>2 statements contributed to this event.
+				</p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Statement ID</th><th class="no_color"></th><th align="left" class="color">Type</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color"><a href="#1">1</a></td><td class="no_color"></td><td align="left" class="color">PL/SQL</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">50.000</td>
+</tr>
+<tr>
+<td align="left" class="color"><a href="#35">35</a></td><td class="no_color"></td><td align="left" class="color">PL/SQL</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">50.000</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="left" class="color"></td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">100.000</td>
+</tr>
+</table>
+<p>
+<br>
+</p>
+<hr>
+<h1>
+<a name="1"></a>Statement 1&nbsp;&nbsp;<a href="#top">overall</a>
+</h1>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="no_color">Session&nbsp;ID</th><th class="no_color"></th><td align="left" class="no_color">90.6</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Service&nbsp;Name</th><th class="no_color"></th><td align="left" class="no_color">DBM11106.antognini.ch</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Module&nbsp;Name</th><th class="no_color"></th><td align="left" class="no_color">SQL*Plus</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Parsing&nbsp;User</th><th class="no_color"></th><td align="left" class="no_color">33</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Hash&nbsp;Value</th><th class="no_color"></th><td align="left" class="no_color">2276506700</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Text</th><td class="no_color"></td><td align="left" class="no_color">DECLARE<br>  l_channel_id sh.sales.channel_id%TYPE := 3;<br>BEGIN<br>  FOR c IN (SELECT cust_id, extract(YEAR FROM time_id), sum(amount_sold)<br>            FROM sh.sales<br>            WHERE channel_id = l_channel_id<br>            GROUP BY cust_id, extract(YEAR FROM time_id))<br>  LOOP<br>    NULL;<br>  END LOOP;<br>END;<br>
+</td>
+</tr>
+</table>
+<h2>
+				Database Call Statistics with Recursive Statements
+			</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Call</th><th class="no_color"></th><th align="right" class="color">Count</th><th class="no_color"></th><th align="left" class="color">Misses</th><th class="no_color"></th><th align="right" class="color">CPU <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">Elapsed <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">PIO <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">LIO <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Consistent <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Current <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Rows</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Parse</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.024</td><td class="no_color"></td><td align="right" class="color">0.162</td><td class="no_color"></td><td align="right" class="color">7</td><td class="no_color"></td><td align="right" class="color">55</td><td class="no_color"></td><td align="right" class="color">55</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Execute</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">1.430</td><td class="no_color"></td><td align="right" class="color">5.483</td><td class="no_color"></td><td align="right" class="color">2,726</td><td class="no_color"></td><td align="right" class="color">5,239</td><td class="no_color"></td><td align="right" class="color">5,239</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">1</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Fetch</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">1.454</td><td class="no_color"></td><td align="right" class="color">5.645</td><td class="no_color"></td><td align="right" class="color">2,733</td><td class="no_color"></td><td align="right" class="color">5,294</td><td class="no_color"></td><td align="right" class="color">5,294</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">1</td>
+</tr>
+</table>
+<h2>Database Call Statistics without Recursive Statements</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Call</th><th class="no_color"></th><th align="right" class="color">Count</th><th class="no_color"></th><th align="left" class="color">Misses</th><th class="no_color"></th><th align="right" class="color">CPU <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">Elapsed <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">PIO <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">LIO <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Consistent <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Current <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Rows</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Parse</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.007</td><td class="no_color"></td><td align="right" class="color">0.046</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Execute</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0.011</td><td class="no_color"></td><td align="right" class="color">0.007</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">1</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Fetch</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.018</td><td class="no_color"></td><td align="right" class="color">0.053</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">1</td>
+</tr>
+</table>
+<h2>Resource Usage Profile&nbsp;&nbsp;<a href="#top">overall</a>&nbsp;<a href="#1">current</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Component</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">recursive statements</td><td class="no_color"></td><td align="right" class="color">5.312</td><td class="no_color"></td><td align="right" class="color">99.618</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">CPU</td><td class="no_color"></td><td align="right" class="color">0.018</td><td class="no_color"></td><td align="right" class="color">0.338</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#SQL*Net%20message%20from%20client-1">SQL*Net message from client</a></td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.045</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.002</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#SQL*Net%20message%20to%20client-1">SQL*Net message to client</a></td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.000</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">5.333</td><td class="no_color"></td><td align="right" class="color">100.000</td>
+</tr>
+</table>
+<p>10 recursive statements were executed.
+				<br>
+</p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Statement ID</th><th class="no_color"></th><th align="left" class="color">Type</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color"><a href="#2">2</a></td><td class="no_color"></td><td align="left" class="color">SELECT</td><td class="no_color"></td><td align="right" class="color">5.229</td><td class="no_color"></td><td align="right" class="color">98.061</td>
+</tr>
+<tr>
+<td align="left" class="color">12</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.030</td><td class="no_color"></td><td align="right" class="color">0.571</td>
+</tr>
+<tr>
+<td align="left" class="color">17</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.024</td><td class="no_color"></td><td align="right" class="color">0.453</td>
+</tr>
+<tr>
+<td align="left" class="color">32</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.012</td><td class="no_color"></td><td align="right" class="color">0.225</td>
+</tr>
+<tr>
+<td align="left" class="color">44</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">0.121</td>
+</tr>
+<tr>
+<td align="left" class="color">57</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.056</td>
+</tr>
+<tr>
+<td align="left" class="color">63</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.038</td>
+</tr>
+<tr>
+<td align="left" class="color">64</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.038</td>
+</tr>
+<tr>
+<td align="left" class="color">70</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.037</td>
+</tr>
+<tr>
+<td align="left" class="color">106</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.019</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="left" class="color"></td><td class="no_color"></td><td align="right" class="color">4.819</td><td class="no_color"></td><td align="right" class="color">90.362</td>
+</tr>
+</table>
+<h2>
+<a name="SQL*Net%20message%20from%20client-1"></a>SQL*Net message from client&nbsp;&nbsp;
+		<a href="#top">overall</a>&nbsp;<a href="#1">current</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">2048 &ge; duration &lt; 4096</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">2,375</td>
+</tr>
+</table>
+<p></p>
+<h2>
+<a name="SQL*Net%20message%20to%20client-1"></a>SQL*Net message to client&nbsp;&nbsp;
+		<a href="#top">overall</a>&nbsp;<a href="#1">current</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">0 &ge; duration &lt; 2</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">2</td>
+</tr>
+</table>
+<p></p>
+<p>
+<br>
+</p>
+<hr>
+<h1>
+<a name="2"></a>Statement 2&nbsp;&nbsp;<a href="#top">overall</a>
+</h1>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="no_color">Session&nbsp;ID</th><th class="no_color"></th><td align="left" class="no_color">90.6</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Service&nbsp;Name</th><th class="no_color"></th><td align="left" class="no_color">DBM11106.antognini.ch</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Module&nbsp;Name</th><th class="no_color"></th><td align="left" class="no_color">SQL*Plus</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Parsing&nbsp;User</th><th class="no_color"></th><td align="left" class="no_color">33</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Recursive&nbsp;Level</th><th class="no_color"></th><td align="left" class="no_color">1</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Parent&nbsp;Statement&nbsp;ID</th><th class="no_color"></th><td align="left" class="no_color"><a href="#1">1</a>&nbsp;
+				</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Hash&nbsp;Value</th><th class="no_color"></th><td align="left" class="no_color">1624534809</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Text</th><td class="no_color"></td><td align="left" class="no_color">SELECT CUST_ID, EXTRACT(YEAR FROM TIME_ID), SUM(AMOUNT_SOLD) FROM SH.SALES WHERE CHANNEL_ID = :B1 GROUP BY CUST_ID, EXTRACT(YEAR FROM TIME_ID)<br>
+</td>
+</tr>
+</table>
+<h2>Execution Plan</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="no_color">Optimizer Mode</th><th class="no_color"></th><td align="left" class="no_color">ALL_ROWS</td>
+</tr>
+</table>
+<p></p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="right" class="color">Rows</th><th class="no_color"></th><th align="left" class="color">Operation</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="right" class="color">16,348</td><td class="no_color"></td><td align="left" class="color">HASH GROUP BY (cr=1720 pr=2590 pw=2590 time=79 us cost=9990 size=11217129 card=534149)</td>
+</tr>
+<tr valign="top">
+<td align="right" class="color">540,328</td><td class="no_color"></td><td align="left" class="color">&nbsp;&nbsp;&nbsp;PARTITION RANGE ALL PARTITION: 1 28 (cr=1720 pr=1649 pw=1649 time=7744 us cost=496 size=11217129 card=534149)</td>
+</tr>
+<tr valign="top">
+<td align="right" class="color">540,328</td><td class="no_color"></td><td align="left" class="color">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TABLE ACCESS FULL SALES PARTITION: 1 28 (cr=1720 pr=1649 pw=1649 time=4756 us cost=496 size=11217129 card=534149)</td>
+</tr>
+</table>
+<h2>
+				Database Call Statistics with Recursive Statements
+			</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Call</th><th class="no_color"></th><th align="right" class="color">Count</th><th class="no_color"></th><th align="left" class="color">Misses</th><th class="no_color"></th><th align="right" class="color">CPU <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">Elapsed <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">PIO <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">LIO <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Consistent <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Current <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Rows</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Parse</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Execute</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.326</td><td class="no_color"></td><td align="right" class="color">0.972</td><td class="no_color"></td><td align="right" class="color">136</td><td class="no_color"></td><td align="right" class="color">3,519</td><td class="no_color"></td><td align="right" class="color">3,519</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Fetch</td><td class="no_color"></td><td align="right" class="color">164</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">1.093</td><td class="no_color"></td><td align="right" class="color">4.503</td><td class="no_color"></td><td align="right" class="color">2,590</td><td class="no_color"></td><td align="right" class="color">1,720</td><td class="no_color"></td><td align="right" class="color">1,720</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">16,348</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">166</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">1.419</td><td class="no_color"></td><td align="right" class="color">5.476</td><td class="no_color"></td><td align="right" class="color">2,726</td><td class="no_color"></td><td align="right" class="color">5,239</td><td class="no_color"></td><td align="right" class="color">5,239</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">16,348</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Average (per row)</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">1</td>
+</tr>
+</table>
+<h2>Database Call Statistics without Recursive Statements</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Call</th><th class="no_color"></th><th align="right" class="color">Count</th><th class="no_color"></th><th align="left" class="color">Misses</th><th class="no_color"></th><th align="right" class="color">CPU <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">Elapsed <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">PIO <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">LIO <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Consistent <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Current <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Rows</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Parse</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Execute</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.045</td><td class="no_color"></td><td align="right" class="color">0.199</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Fetch</td><td class="no_color"></td><td align="right" class="color">164</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">1.093</td><td class="no_color"></td><td align="right" class="color">4.503</td><td class="no_color"></td><td align="right" class="color">2,590</td><td class="no_color"></td><td align="right" class="color">1,720</td><td class="no_color"></td><td align="right" class="color">1,720</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">16,348</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">166</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">1.138</td><td class="no_color"></td><td align="right" class="color">4.703</td><td class="no_color"></td><td align="right" class="color">2,590</td><td class="no_color"></td><td align="right" class="color">1,720</td><td class="no_color"></td><td align="right" class="color">1,720</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">16,348</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Average (per row)</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">1</td>
+</tr>
+</table>
+<h2>Resource Usage Profile&nbsp;&nbsp;<a href="#top">overall</a>&nbsp;<a href="#2">current</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Component</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#db%20file%20scattered%20read-2">db file scattered read</a></td><td class="no_color"></td><td align="right" class="color">1.769</td><td class="no_color"></td><td align="right" class="color">33.831</td><td class="no_color"></td><td align="right" class="color">225</td><td class="no_color"></td><td align="right" class="color">0.008</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">CPU</td><td class="no_color"></td><td align="right" class="color">1.138</td><td class="no_color"></td><td align="right" class="color">21.759</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#direct%20path%20read%20temp-2">direct path read temp</a></td><td class="no_color"></td><td align="right" class="color">1.005</td><td class="no_color"></td><td align="right" class="color">19.211</td><td class="no_color"></td><td align="right" class="color">941</td><td class="no_color"></td><td align="right" class="color">0.001</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">recursive statements</td><td class="no_color"></td><td align="right" class="color">0.775</td><td class="no_color"></td><td align="right" class="color">14.812</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#direct%20path%20write%20temp-2">direct path write temp</a></td><td class="no_color"></td><td align="right" class="color">0.408</td><td class="no_color"></td><td align="right" class="color">7.796</td><td class="no_color"></td><td align="right" class="color">941</td><td class="no_color"></td><td align="right" class="color">0.000</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#db%20file%20sequential%20read-2">db file sequential read</a></td><td class="no_color"></td><td align="right" class="color">0.136</td><td class="no_color"></td><td align="right" class="color">2.592</td><td class="no_color"></td><td align="right" class="color">32</td><td class="no_color"></td><td align="right" class="color">0.004</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">5.229</td><td class="no_color"></td><td align="right" class="color">100.000</td>
+</tr>
+</table>
+<p>33 recursive statements were executed.
+				<br>
+</p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Statement ID</th><th class="no_color"></th><th align="left" class="color">Type</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">3</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.135</td><td class="no_color"></td><td align="right" class="color">2.591</td>
+</tr>
+<tr>
+<td align="left" class="color">4</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.102</td><td class="no_color"></td><td align="right" class="color">1.948</td>
+</tr>
+<tr>
+<td align="left" class="color">5</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.094</td><td class="no_color"></td><td align="right" class="color">1.797</td>
+</tr>
+<tr>
+<td align="left" class="color">6</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.084</td><td class="no_color"></td><td align="right" class="color">1.598</td>
+</tr>
+<tr>
+<td align="left" class="color">7</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.083</td><td class="no_color"></td><td align="right" class="color">1.586</td>
+</tr>
+<tr>
+<td align="left" class="color">9</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.037</td><td class="no_color"></td><td align="right" class="color">0.703</td>
+</tr>
+<tr>
+<td align="left" class="color">10</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.035</td><td class="no_color"></td><td align="right" class="color">0.664</td>
+</tr>
+<tr>
+<td align="left" class="color">11</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.031</td><td class="no_color"></td><td align="right" class="color">0.598</td>
+</tr>
+<tr>
+<td align="left" class="color">14</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.028</td><td class="no_color"></td><td align="right" class="color">0.539</td>
+</tr>
+<tr>
+<td align="left" class="color">20</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.019</td><td class="no_color"></td><td align="right" class="color">0.365</td>
+</tr>
+<tr>
+<td align="left" class="color">24</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.017</td><td class="no_color"></td><td align="right" class="color">0.333</td>
+</tr>
+<tr>
+<td align="left" class="color">26</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.014</td><td class="no_color"></td><td align="right" class="color">0.271</td>
+</tr>
+<tr>
+<td align="left" class="color">28</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.013</td><td class="no_color"></td><td align="right" class="color">0.252</td>
+</tr>
+<tr>
+<td align="left" class="color">30</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.013</td><td class="no_color"></td><td align="right" class="color">0.248</td>
+</tr>
+<tr>
+<td align="left" class="color">37</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.010</td><td class="no_color"></td><td align="right" class="color">0.190</td>
+</tr>
+<tr>
+<td align="left" class="color">38</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.009</td><td class="no_color"></td><td align="right" class="color">0.175</td>
+</tr>
+<tr>
+<td align="left" class="color">41</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.007</td><td class="no_color"></td><td align="right" class="color">0.136</td>
+</tr>
+<tr>
+<td align="left" class="color">43</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">0.124</td>
+</tr>
+<tr>
+<td align="left" class="color">45</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">0.115</td>
+</tr>
+<tr>
+<td align="left" class="color">46</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">0.115</td>
+</tr>
+<tr>
+<td align="left" class="color">52</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.096</td>
+</tr>
+<tr>
+<td align="left" class="color">54</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.087</td>
+</tr>
+<tr>
+<td align="left" class="color">55</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.084</td>
+</tr>
+<tr>
+<td align="left" class="color">65</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.038</td>
+</tr>
+<tr>
+<td align="left" class="color">71</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.038</td>
+</tr>
+<tr>
+<td align="left" class="color">72</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.038</td>
+</tr>
+<tr>
+<td align="left" class="color">78</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.022</td>
+</tr>
+<tr>
+<td align="left" class="color">82</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.019</td>
+</tr>
+<tr>
+<td align="left" class="color">83</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.019</td>
+</tr>
+<tr>
+<td align="left" class="color">107</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.019</td>
+</tr>
+<tr>
+<td align="left" class="color">111</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.004</td>
+</tr>
+<tr>
+<td align="left" class="color">117</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td>
+</tr>
+<tr>
+<td align="left" class="color">118</td><td class="no_color"></td><td align="left" class="color">SELECT
+		(SYS recursive)
+	</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="left" class="color"></td><td class="no_color"></td><td align="right" class="color">0.487</td><td class="no_color"></td><td align="right" class="color">9.319</td>
+</tr>
+</table>
+<h2>
+<a name="db%20file%20scattered%20read-2"></a>db file scattered read&nbsp;&nbsp;
+		<a href="#top">overall</a>&nbsp;<a href="#2">current</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Blocks per Event <a href="#units" class="th">[b]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">128 &ge; duration &lt; 256</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.027</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">0.889</td><td class="no_color"></td><td align="right" class="color">242</td><th class="no_color"></th><td align="right" class="color">8</td><th class="no_color"></th><td align="right" class="color">4.000</td>
+</tr>
+<tr>
+<td align="center" class="color">256 &ge; duration &lt; 512</td><td class="no_color"></td><td align="right" class="color">0.041</td><td class="no_color"></td><td align="right" class="color">2.345</td><td class="no_color"></td><td align="right" class="color">111</td><td class="no_color"></td><td align="right" class="color">49.333</td><td class="no_color"></td><td align="right" class="color">374</td><th class="no_color"></th><td align="right" class="color">798</td><th class="no_color"></th><td align="right" class="color">7.189</td>
+</tr>
+<tr>
+<td align="center" class="color">512 &ge; duration &lt; 1024</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.300</td><td class="no_color"></td><td align="right" class="color">8</td><td class="no_color"></td><td align="right" class="color">3.556</td><td class="no_color"></td><td align="right" class="color">663</td><th class="no_color"></th><td align="right" class="color">58</td><th class="no_color"></th><td align="right" class="color">7.250</td>
+</tr>
+<tr>
+<td align="center" class="color">1024 &ge; duration &lt; 2048</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.069</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.444</td><td class="no_color"></td><td align="right" class="color">1,222</td><th class="no_color"></th><td align="right" class="color">7</td><th class="no_color"></th><td align="right" class="color">7.000</td>
+</tr>
+<tr>
+<td align="center" class="color">2048 &ge; duration &lt; 4096</td><td class="no_color"></td><td align="right" class="color">0.009</td><td class="no_color"></td><td align="right" class="color">0.487</td><td class="no_color"></td><td align="right" class="color">3</td><td class="no_color"></td><td align="right" class="color">1.333</td><td class="no_color"></td><td align="right" class="color">2,872</td><th class="no_color"></th><td align="right" class="color">22</td><th class="no_color"></th><td align="right" class="color">7.333</td>
+</tr>
+<tr>
+<td align="center" class="color">4096 &ge; duration &lt; 8192</td><td class="no_color"></td><td align="right" class="color">0.078</td><td class="no_color"></td><td align="right" class="color">4.415</td><td class="no_color"></td><td align="right" class="color">11</td><td class="no_color"></td><td align="right" class="color">4.889</td><td class="no_color"></td><td align="right" class="color">7,100</td><th class="no_color"></th><td align="right" class="color">77</td><th class="no_color"></th><td align="right" class="color">7.000</td>
+</tr>
+<tr>
+<td align="center" class="color">8192 &ge; duration &lt; 16384</td><td class="no_color"></td><td align="right" class="color">0.482</td><td class="no_color"></td><td align="right" class="color">27.220</td><td class="no_color"></td><td align="right" class="color">41</td><td class="no_color"></td><td align="right" class="color">18.222</td><td class="no_color"></td><td align="right" class="color">11,745</td><th class="no_color"></th><td align="right" class="color">295</td><th class="no_color"></th><td align="right" class="color">7.195</td>
+</tr>
+<tr>
+<td align="center" class="color">16384 &ge; duration &lt; 32768</td><td class="no_color"></td><td align="right" class="color">0.957</td><td class="no_color"></td><td align="right" class="color">54.090</td><td class="no_color"></td><td align="right" class="color">43</td><td class="no_color"></td><td align="right" class="color">19.111</td><td class="no_color"></td><td align="right" class="color">22,253</td><th class="no_color"></th><td align="right" class="color">316</td><th class="no_color"></th><td align="right" class="color">7.349</td>
+</tr>
+<tr>
+<td align="center" class="color">32768 &ge; duration &lt; 65536</td><td class="no_color"></td><td align="right" class="color">0.195</td><td class="no_color"></td><td align="right" class="color">11.046</td><td class="no_color"></td><td align="right" class="color">5</td><td class="no_color"></td><td align="right" class="color">2.222</td><td class="no_color"></td><td align="right" class="color">39,084</td><th class="no_color"></th><td align="right" class="color">36</td><th class="no_color"></th><td align="right" class="color">7.200</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">1.769</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">225</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">7,863</td><td class="no_color"></td><td align="right" class="color">1,617</td><td class="no_color"></td><td align="right" class="color">7.187</td>
+</tr>
+</table>
+<p></p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">File</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">4</td><td class="no_color"></td><td align="right" class="color">1.769</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">225</td><th class="no_color"></th><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">1,617</td><th class="no_color"></th><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">7,863</td>
+</tr>
+</table>
+<h2>
+<a name="direct%20path%20read%20temp-2"></a>direct path read temp&nbsp;&nbsp;
+		<a href="#top">overall</a>&nbsp;<a href="#2">current</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Blocks per Event <a href="#units" class="th">[b]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">0 &ge; duration &lt; 2</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">5</td><td class="no_color"></td><td align="right" class="color">0.531</td><td class="no_color"></td><td align="right" class="color">1</td><th class="no_color"></th><td align="right" class="color">5</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">2 &ge; duration &lt; 4</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.242</td><td class="no_color"></td><td align="right" class="color">714</td><td class="no_color"></td><td align="right" class="color">75.877</td><td class="no_color"></td><td align="right" class="color">3</td><th class="no_color"></th><td align="right" class="color">714</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">4 &ge; duration &lt; 8</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.013</td><td class="no_color"></td><td align="right" class="color">24</td><td class="no_color"></td><td align="right" class="color">2.550</td><td class="no_color"></td><td align="right" class="color">5</td><th class="no_color"></th><td align="right" class="color">24</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">8 &ge; duration &lt; 16</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.010</td><td class="no_color"></td><td align="right" class="color">7</td><td class="no_color"></td><td align="right" class="color">0.744</td><td class="no_color"></td><td align="right" class="color">14</td><th class="no_color"></th><td align="right" class="color">7</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">16 &ge; duration &lt; 32</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.025</td><td class="no_color"></td><td align="right" class="color">10</td><td class="no_color"></td><td align="right" class="color">1.063</td><td class="no_color"></td><td align="right" class="color">25</td><th class="no_color"></th><td align="right" class="color">10</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">32 &ge; duration &lt; 64</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.058</td><td class="no_color"></td><td align="right" class="color">13</td><td class="no_color"></td><td align="right" class="color">1.382</td><td class="no_color"></td><td align="right" class="color">45</td><th class="no_color"></th><td align="right" class="color">13</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">64 &ge; duration &lt; 128</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.128</td><td class="no_color"></td><td align="right" class="color">14</td><td class="no_color"></td><td align="right" class="color">1.488</td><td class="no_color"></td><td align="right" class="color">92</td><th class="no_color"></th><td align="right" class="color">14</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">128 &ge; duration &lt; 256</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.284</td><td class="no_color"></td><td align="right" class="color">16</td><td class="no_color"></td><td align="right" class="color">1.700</td><td class="no_color"></td><td align="right" class="color">178</td><th class="no_color"></th><td align="right" class="color">16</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">256 &ge; duration &lt; 512</td><td class="no_color"></td><td align="right" class="color">0.003</td><td class="no_color"></td><td align="right" class="color">0.249</td><td class="no_color"></td><td align="right" class="color">7</td><td class="no_color"></td><td align="right" class="color">0.744</td><td class="no_color"></td><td align="right" class="color">357</td><th class="no_color"></th><td align="right" class="color">7</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">512 &ge; duration &lt; 1024</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">0.529</td><td class="no_color"></td><td align="right" class="color">7</td><td class="no_color"></td><td align="right" class="color">0.744</td><td class="no_color"></td><td align="right" class="color">760</td><th class="no_color"></th><td align="right" class="color">7</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">1024 &ge; duration &lt; 2048</td><td class="no_color"></td><td align="right" class="color">0.013</td><td class="no_color"></td><td align="right" class="color">1.332</td><td class="no_color"></td><td align="right" class="color">9</td><td class="no_color"></td><td align="right" class="color">0.956</td><td class="no_color"></td><td align="right" class="color">1,487</td><th class="no_color"></th><td align="right" class="color">9</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">2048 &ge; duration &lt; 4096</td><td class="no_color"></td><td align="right" class="color">0.067</td><td class="no_color"></td><td align="right" class="color">6.646</td><td class="no_color"></td><td align="right" class="color">22</td><td class="no_color"></td><td align="right" class="color">2.338</td><td class="no_color"></td><td align="right" class="color">3,035</td><th class="no_color"></th><td align="right" class="color">22</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">4096 &ge; duration &lt; 8192</td><td class="no_color"></td><td align="right" class="color">0.298</td><td class="no_color"></td><td align="right" class="color">29.663</td><td class="no_color"></td><td align="right" class="color">50</td><td class="no_color"></td><td align="right" class="color">5.313</td><td class="no_color"></td><td align="right" class="color">5,960</td><th class="no_color"></th><td align="right" class="color">50</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">8192 &ge; duration &lt; 16384</td><td class="no_color"></td><td align="right" class="color">0.334</td><td class="no_color"></td><td align="right" class="color">33.260</td><td class="no_color"></td><td align="right" class="color">31</td><td class="no_color"></td><td align="right" class="color">3.294</td><td class="no_color"></td><td align="right" class="color">10,778</td><th class="no_color"></th><td align="right" class="color">31</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">16384 &ge; duration &lt; 32768</td><td class="no_color"></td><td align="right" class="color">0.241</td><td class="no_color"></td><td align="right" class="color">23.942</td><td class="no_color"></td><td align="right" class="color">11</td><td class="no_color"></td><td align="right" class="color">1.169</td><td class="no_color"></td><td align="right" class="color">21,865</td><th class="no_color"></th><td align="right" class="color">11</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">32768 &ge; duration &lt; 65536</td><td class="no_color"></td><td align="right" class="color">0.036</td><td class="no_color"></td><td align="right" class="color">3.619</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.106</td><td class="no_color"></td><td align="right" class="color">36,358</td><th class="no_color"></th><td align="right" class="color">1</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">1.005</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">941</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">1,068</td><td class="no_color"></td><td align="right" class="color">941</td><td class="no_color"></td><td align="right" class="color">1.000</td>
+</tr>
+</table>
+<p></p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">File</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">201</td><td class="no_color"></td><td align="right" class="color">1.005</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">941</td><th class="no_color"></th><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">941</td><th class="no_color"></th><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">1,068</td>
+</tr>
+</table>
+<h2>
+<a name="direct%20path%20write%20temp-2"></a>direct path write temp&nbsp;&nbsp;
+		<a href="#top">overall</a>&nbsp;<a href="#2">current</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Blocks per Event <a href="#units" class="th">[b]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">0 &ge; duration &lt; 2</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.066</td><td class="no_color"></td><td align="right" class="color">270</td><td class="no_color"></td><td align="right" class="color">28.693</td><td class="no_color"></td><td align="right" class="color">1</td><th class="no_color"></th><td align="right" class="color">270</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">2 &ge; duration &lt; 4</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.402</td><td class="no_color"></td><td align="right" class="color">442</td><td class="no_color"></td><td align="right" class="color">46.971</td><td class="no_color"></td><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">442</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">4 &ge; duration &lt; 8</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.191</td><td class="no_color"></td><td align="right" class="color">149</td><td class="no_color"></td><td align="right" class="color">15.834</td><td class="no_color"></td><td align="right" class="color">5</td><th class="no_color"></th><td align="right" class="color">149</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">8 &ge; duration &lt; 16</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.049</td><td class="no_color"></td><td align="right" class="color">16</td><td class="no_color"></td><td align="right" class="color">1.700</td><td class="no_color"></td><td align="right" class="color">12</td><th class="no_color"></th><td align="right" class="color">16</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">16 &ge; duration &lt; 32</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.016</td><td class="no_color"></td><td align="right" class="color">3</td><td class="no_color"></td><td align="right" class="color">0.319</td><td class="no_color"></td><td align="right" class="color">21</td><th class="no_color"></th><td align="right" class="color">3</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">32 &ge; duration &lt; 64</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.022</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">0.213</td><td class="no_color"></td><td align="right" class="color">45</td><th class="no_color"></th><td align="right" class="color">2</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">64 &ge; duration &lt; 128</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.136</td><td class="no_color"></td><td align="right" class="color">6</td><td class="no_color"></td><td align="right" class="color">0.638</td><td class="no_color"></td><td align="right" class="color">92</td><th class="no_color"></th><td align="right" class="color">6</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">128 &ge; duration &lt; 256</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.527</td><td class="no_color"></td><td align="right" class="color">13</td><td class="no_color"></td><td align="right" class="color">1.382</td><td class="no_color"></td><td align="right" class="color">165</td><th class="no_color"></th><td align="right" class="color">13</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">256 &ge; duration &lt; 512</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.382</td><td class="no_color"></td><td align="right" class="color">4</td><td class="no_color"></td><td align="right" class="color">0.425</td><td class="no_color"></td><td align="right" class="color">390</td><th class="no_color"></th><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">512 &ge; duration &lt; 1024</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">0.418</td><td class="no_color"></td><td align="right" class="color">3</td><td class="no_color"></td><td align="right" class="color">0.319</td><td class="no_color"></td><td align="right" class="color">568</td><th class="no_color"></th><td align="right" class="color">3</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">1024 &ge; duration &lt; 2048</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">1.587</td><td class="no_color"></td><td align="right" class="color">4</td><td class="no_color"></td><td align="right" class="color">0.425</td><td class="no_color"></td><td align="right" class="color">1,617</td><th class="no_color"></th><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">2048 &ge; duration &lt; 4096</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">1.511</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">0.213</td><td class="no_color"></td><td align="right" class="color">3,080</td><th class="no_color"></th><td align="right" class="color">2</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">4096 &ge; duration &lt; 8192</td><td class="no_color"></td><td align="right" class="color">0.059</td><td class="no_color"></td><td align="right" class="color">14.595</td><td class="no_color"></td><td align="right" class="color">11</td><td class="no_color"></td><td align="right" class="color">1.169</td><td class="no_color"></td><td align="right" class="color">5,409</td><th class="no_color"></th><td align="right" class="color">11</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">8192 &ge; duration &lt; 16384</td><td class="no_color"></td><td align="right" class="color">0.095</td><td class="no_color"></td><td align="right" class="color">23.272</td><td class="no_color"></td><td align="right" class="color">8</td><td class="no_color"></td><td align="right" class="color">0.850</td><td class="no_color"></td><td align="right" class="color">11,858</td><th class="no_color"></th><td align="right" class="color">8</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">16384 &ge; duration &lt; 32768</td><td class="no_color"></td><td align="right" class="color">0.079</td><td class="no_color"></td><td align="right" class="color">19.388</td><td class="no_color"></td><td align="right" class="color">4</td><td class="no_color"></td><td align="right" class="color">0.425</td><td class="no_color"></td><td align="right" class="color">19,759</td><th class="no_color"></th><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">32768 &ge; duration &lt; 65536</td><td class="no_color"></td><td align="right" class="color">0.153</td><td class="no_color"></td><td align="right" class="color">37.439</td><td class="no_color"></td><td align="right" class="color">4</td><td class="no_color"></td><td align="right" class="color">0.425</td><td class="no_color"></td><td align="right" class="color">38,155</td><th class="no_color"></th><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">0.408</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">941</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">433</td><td class="no_color"></td><td align="right" class="color">941</td><td class="no_color"></td><td align="right" class="color">1.000</td>
+</tr>
+</table>
+<p></p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">File</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">201</td><td class="no_color"></td><td align="right" class="color">0.408</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">941</td><th class="no_color"></th><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">941</td><th class="no_color"></th><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">433</td>
+</tr>
+</table>
+<h2>
+<a name="db%20file%20sequential%20read-2"></a>db file sequential read&nbsp;&nbsp;
+		<a href="#top">overall</a>&nbsp;<a href="#2">current</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Blocks per Event <a href="#units" class="th">[b]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">128 &ge; duration &lt; 256</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">1.714</td><td class="no_color"></td><td align="right" class="color">14</td><td class="no_color"></td><td align="right" class="color">43.750</td><td class="no_color"></td><td align="right" class="color">166</td><th class="no_color"></th><td align="right" class="color">14</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">256 &ge; duration &lt; 512</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">1.026</td><td class="no_color"></td><td align="right" class="color">4</td><td class="no_color"></td><td align="right" class="color">12.500</td><td class="no_color"></td><td align="right" class="color">348</td><th class="no_color"></th><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">512 &ge; duration &lt; 1024</td><td class="no_color"></td><td align="right" class="color">0.001</td><td class="no_color"></td><td align="right" class="color">0.537</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">3.125</td><td class="no_color"></td><td align="right" class="color">728</td><th class="no_color"></th><td align="right" class="color">1</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">1024 &ge; duration &lt; 2048</td><td class="no_color"></td><td align="right" class="color">0.002</td><td class="no_color"></td><td align="right" class="color">1.630</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">6.250</td><td class="no_color"></td><td align="right" class="color">1,104</td><th class="no_color"></th><td align="right" class="color">2</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">2048 &ge; duration &lt; 4096</td><td class="no_color"></td><td align="right" class="color">0.007</td><td class="no_color"></td><td align="right" class="color">4.857</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">6.250</td><td class="no_color"></td><td align="right" class="color">3,292</td><th class="no_color"></th><td align="right" class="color">2</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">4096 &ge; duration &lt; 8192</td><td class="no_color"></td><td align="right" class="color">0.022</td><td class="no_color"></td><td align="right" class="color">16.524</td><td class="no_color"></td><td align="right" class="color">3</td><td class="no_color"></td><td align="right" class="color">9.375</td><td class="no_color"></td><td align="right" class="color">7,465</td><th class="no_color"></th><td align="right" class="color">3</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">8192 &ge; duration &lt; 16384</td><td class="no_color"></td><td align="right" class="color">0.057</td><td class="no_color"></td><td align="right" class="color">41.780</td><td class="no_color"></td><td align="right" class="color">4</td><td class="no_color"></td><td align="right" class="color">12.500</td><td class="no_color"></td><td align="right" class="color">14,156</td><th class="no_color"></th><td align="right" class="color">4</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr>
+<td align="center" class="color">16384 &ge; duration &lt; 32768</td><td class="no_color"></td><td align="right" class="color">0.043</td><td class="no_color"></td><td align="right" class="color">31.931</td><td class="no_color"></td><td align="right" class="color">2</td><td class="no_color"></td><td align="right" class="color">6.250</td><td class="no_color"></td><td align="right" class="color">21,639</td><th class="no_color"></th><td align="right" class="color">2</td><th class="no_color"></th><td align="right" class="color">1.000</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">0.136</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">32</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">4,235</td><td class="no_color"></td><td align="right" class="color">32</td><td class="no_color"></td><td align="right" class="color">1.000</td>
+</tr>
+</table>
+<p></p>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">File</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Blocks <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">4</td><td class="no_color"></td><td align="right" class="color">0.113</td><td class="no_color"></td><td align="right" class="color">83.261</td><td class="no_color"></td><td align="right" class="color">30</td><th class="no_color"></th><td align="right" class="color">93.750</td><td class="no_color"></td><td align="right" class="color">30</td><th class="no_color"></th><td align="right" class="color">93.750</td><td class="no_color"></td><td align="right" class="color">3,762</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">3</td><td class="no_color"></td><td align="right" class="color">0.023</td><td class="no_color"></td><td align="right" class="color">16.739</td><td class="no_color"></td><td align="right" class="color">2</td><th class="no_color"></th><td align="right" class="color">6.250</td><td class="no_color"></td><td align="right" class="color">2</td><th class="no_color"></th><td align="right" class="color">6.250</td><td class="no_color"></td><td align="right" class="color">11,344</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Total</td><th class="no_color"></th><td align="right" class="color">0.136</td><th class="no_color"></th><td align="right" class="color">100.000</td><th class="no_color"></th><td align="right" class="color">32</td><th class="no_color"></th><td align="right" class="color">100.000</td><th class="no_color"></th><td align="right" class="color">32</td><th class="no_color"></th><td align="right" class="color">100.000</td><th class="no_color"></th><td align="right" class="color">4,235</td>
+</tr>
+</table>
+<p>
+<br>
+</p>
+<hr>
+<h1>
+<a name="35"></a>Statement 35&nbsp;&nbsp;<a href="#top">overall</a>
+</h1>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="no_color">Session&nbsp;ID</th><th class="no_color"></th><td align="left" class="no_color">90.6</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Service&nbsp;Name</th><th class="no_color"></th><td align="left" class="no_color">DBM11106.antognini.ch</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Module&nbsp;Name</th><th class="no_color"></th><td align="left" class="no_color">SQL*Plus</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Parsing&nbsp;User</th><th class="no_color"></th><td align="left" class="no_color">33</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Hash&nbsp;Value</th><th class="no_color"></th><td align="left" class="no_color">2873426773</td>
+</tr>
+<tr valign="top">
+<th align="left" class="no_color">Text</th><td class="no_color"></td><td align="left" class="no_color">BEGIN dbms_monitor.session_trace_enable(null, null, true, true); END;<br>
+</td>
+</tr>
+</table>
+<h2>
+				Database Call Statistics
+			</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Call</th><th class="no_color"></th><th align="right" class="color">Count</th><th class="no_color"></th><th align="left" class="color">Misses</th><th class="no_color"></th><th align="right" class="color">CPU <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">Elapsed <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">PIO <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">LIO <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Consistent <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Current <a href="#units" class="th">[b]</a></th><th class="no_color"></th><th align="right" class="color">Rows</th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Parse</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Execute</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">13</td><td class="no_color"></td><td align="right" class="color">55</td><td class="no_color"></td><td align="right" class="color">55</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">1</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Fetch</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">0</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">0.005</td><td class="no_color"></td><td align="right" class="color">13</td><td class="no_color"></td><td align="right" class="color">55</td><td class="no_color"></td><td align="right" class="color">55</td><td class="no_color"></td><td align="right" class="color">0</td><td class="no_color"></td><td align="right" class="color">1</td>
+</tr>
+</table>
+<h2>Resource Usage Profile&nbsp;&nbsp;<a href="#top">overall</a>&nbsp;<a href="#35">current</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Component</th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#SQL*Net%20message%20from%20client-35">SQL*Net message from client</a></td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">61.569</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.006</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color">CPU</td><td class="no_color"></td><td align="right" class="color">0.004</td><td class="no_color"></td><td align="right" class="color">38.411</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td><td class="no_color"></td><td align="right" class="color">
+							n/a
+						</td>
+</tr>
+<tr valign="top">
+<td align="left" class="color"><a href="#SQL*Net%20message%20to%20client-35">SQL*Net message to client</a></td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">0.019</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">0.000</td>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="left" class="color">Total</td><td class="no_color"></td><td align="right" class="color">0.010</td><td class="no_color"></td><td align="right" class="color">100.000</td>
+</tr>
+</table>
+<h2>
+<a name="SQL*Net%20message%20from%20client-35"></a>SQL*Net message from client&nbsp;&nbsp;
+		<a href="#top">overall</a>&nbsp;<a href="#35">current</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">4096 &ge; duration &lt; 8192</td><td class="no_color"></td><td align="right" class="color">0.006</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">6,410</td>
+</tr>
+</table>
+<p></p>
+<h2>
+<a name="SQL*Net%20message%20to%20client-35"></a>SQL*Net message to client&nbsp;&nbsp;
+		<a href="#top">overall</a>&nbsp;<a href="#35">current</a>
+</h2>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr valign="top">
+<th align="left" class="color">Range <a href="#units" class="th">[&mu;s]</a></th><th class="no_color"></th><th align="right" class="color">Total Duration <a href="#units" class="th">[s]</a></th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Number of Events</th><th class="no_color"></th><th align="right" class="color">%</th><th class="no_color"></th><th align="right" class="color">Duration per Event <a href="#units" class="th">[&mu;s]</a></th>
+</tr>
+<tr class="no_color">
+<td></td>
+</tr>
+<tr>
+<td align="center" class="color">0 &ge; duration &lt; 2</td><td class="no_color"></td><td align="right" class="color">0.000</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">1</td><td class="no_color"></td><td align="right" class="color">100.000</td><td class="no_color"></td><td align="right" class="color">2</td>
+</tr>
+</table>
+<p></p>
+<p>
+<br>
+</p>
+<hr>
+<h1>
+<a name="units"></a>Units of Measure&nbsp;&nbsp;<a href="#top">overall</a>
+</h1>
+<p>
+				[s] = seconds
+				<br>[&mu;s] = microseconds
+				<br>[b] = database blocks
+			<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</body>
+</html>
